@@ -1,0 +1,308 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{whodengue2012}
+WHO, Dengue fever/dengue haemorrhagic fever,
+  \url{http://www.who.int/csr/disease/dengue/en/index.html}, accessed:
+  2015-10-30 (2012).
+
+\bibitem{world2007scientific}
+WHO, et~al., Scientific working group report on dengue, Geneva, Switzerland:
+  WHO.
+
+\bibitem{whodengue2012fact}
+WHO, Dengue and dengue haemorrhagic fever. fact sheet number 117,
+  \url{http://www.who.int/mediacentre/factsheets/fs117/en/}, accessed 2015-11-5
+  (2012).
+
+\bibitem{bhatt2013global}
+S.~Bhatt, P.~W. Gething, O.~J. Brady, J.~P. Messina, A.~W. Farlow, C.~L. Moyes,
+  J.~M. Drake, J.~S. Brownstein, A.~G. Hoen, O.~Sankoh, et~al., The global
+  distribution and burden of dengue, Nature 496~(7446) (2013) 504--507.
+
+\bibitem{denguethai2015}
+B.~of~Vector-Borne Diseases~Thailand, Dengue fever situation in thailand,
+  \url{http://www.thaivbd.org/n/dengues?module=สถานการณ์ไข้เลือดออก&type=week&year=2558},
+  accessed 2015-12-1 (2015).
+
+\bibitem{hammon1964virological}
+W.~M. Hammon, G.~Sather, Virological findings in the 1960 hemorrhagic fever
+  epidemic (dengue) in thailand, The American journal of tropical medicine and
+  hygiene 13~(4) (1964) 629--641.
+
+\bibitem{chareonsook1999changing}
+O.~Chareonsook, H.~Foy, A.~Teeraratkul, N.~Silarug, Changing epidemiology of
+  dengue hemorrhagic fever in thailand, Epidemiology and infection 122~(01)
+  (1999) 161--166.
+
+\bibitem{wilder2012denguetools}
+A.~Wilder-Smith, K.-E. Renhorn, H.~Tissera, S.~A. Bakar, L.~Alphey,
+  P.~Kittayapong, S.~Lindsay, J.~Logan, C.~Hatz, P.~Reiter, et~al.,
+  Denguetools: innovative tools and strategies for the surveillance and control
+  of dengue, Global health action 5.
+
+\bibitem{cummings2009impact}
+D.~A. Cummings, S.~Iamsirithaworn, J.~T. Lessler, A.~McDermott, R.~Prasanthong,
+  A.~Nisalak, R.~G. Jarman, D.~S. Burke, R.~V. Gibbons, et~al., The impact of
+  the demographic transition on dengue in thailand: insights from a statistical
+  analysis and mathematical modeling, PLoS medicine 6~(9) (2009) 999.
+
+\bibitem{gubler1995dengue}
+D.~J. Gubler, G.~G. Clark, Dengue/dengue hemorrhagic fever: the emergence of a
+  global health problem., Emerging infectious diseases 1~(2) (1995) 55.
+
+\bibitem{whodenvtype2015}
+WHO, Dengue type, \url{http://www.who.int/mediacentre/factsheets/fs117/en/},
+  accessed 2015-11-20 (2015).
+
+\bibitem{whodenvsym2015}
+WHO, Human dengue symptoms, \url{http://www.who.int/denguecontrol/human/en/},
+  accessed 2015-11-19 (2015).
+
+\bibitem{webmdsymptoms2015}
+WebMD, Symptoms of dengue fever,
+  \url{http://www.webmd.com/a-to-z-guides/dengue-fever-reference}, accessed
+  2015-11-24 (2015).
+
+\bibitem{hesse2007dengue}
+R.~R. Hesse, Dengue virus evolution and virulence models, Clinical Infectious
+  Diseases 44~(11) (2007) 1462--1466.
+
+\bibitem{tatem2006global}
+A.~J. Tatem, S.~I. Hay, D.~J. Rogers, Global traffic and disease vector
+  dispersal, Proceedings of the National Academy of Sciences 103~(16) (2006)
+  6242--6247.
+
+\bibitem{gubler2002epidemic}
+D.~J. Gubler, Epidemic dengue/dengue hemorrhagic fever as a public health,
+  social and economic problem in the 21st century, Trends in microbiology
+  10~(2) (2002) 100--103.
+
+\bibitem{whomosquito2007}
+WHO, The aedes mosquito chacteristic,
+  \url{http://www.who.int/denguecontrol/mosquito/en/}, accessed 2015-11-20
+  (2007).
+
+\bibitem{zettel2012yellow}
+C.~Zettel, P.~Kaufman, Yellow fever mosquito aedes aegypti (linnaeus)(insecta:
+  Diptera: Culicidae) (2012).
+
+\bibitem{mortimer1998aedes}
+R.~Mortimer, Aedes aegypti and dengue fever, Rio de Janeiro. Diakses tanggal
+  15.
+
+\bibitem{gubler2004cities}
+D.~J. Gubler, Cities spawn epidemic dengue viruses, Nature medicine 10~(2)
+  (2004) 129--130.
+
+\bibitem{anuradha19981996}
+S.~Anuradha, N.~Singh, S.~Rizvi, S.~Agarwal, R.~Gur, M.~Mathur, The 1996
+  outbreak of dengue hemorrhagic fever in delhi, india.
+
+\bibitem{vaughn2000invited}
+D.~W. Vaughn, Invited commentary: Dengue lessons from cuba, American Journal of
+  Epidemiology 152~(9) (2000) 800--803.
+
+\bibitem{clark2005economic}
+D.~V. Clark, M.~P. Mammen, A.~Nisalak, V.~Puthimethee, T.~P. Endy, Economic
+  impact of dengue fever/dengue hemorrhagic fever in thailand at the family and
+  population levels, The American journal of tropical medicine and hygiene
+  72~(6) (2005) 786--791.
+
+\bibitem{luz2009disability}
+P.~Luz, B.~Grinsztejn, A.~Galvani, Disability adjusted life years lost to
+  dengue in brazil, Tropical Medicine \& International Health 14~(2) (2009)
+  237--246.
+
+\bibitem{focks1995simulation}
+D.~A. Focks, E.~Daniels, D.~G. Haile, J.~E. Keesling, et~al., A simulation
+  model of the epidemiology of urban dengue fever: literature analysis, model
+  development, preliminary validation, and samples of simulation results,
+  American Journal of Tropical Medicine and Hygiene 53~(5) (1995) 489--506.
+
+\bibitem{leitmeyer1999dengue}
+K.~C. Leitmeyer, D.~W. Vaughn, D.~M. Watts, R.~Salas, I.~Villalobos, C.~Ramos,
+  R.~Rico-Hesse, et~al., Dengue virus structural differences that correlate
+  with pathogenesis, Journal of virology 73~(6) (1999) 4738--4747.
+
+\bibitem{runge2008does}
+S.~Runge-Ranzinger, O.~Horstick, M.~Marx, A.~Kroeger, What does dengue disease
+  surveillance contribute to predicting and detecting outbreaks and describing
+  trends?, Tropical Medicine \& International Health 13~(8) (2008) 1022--1041.
+
+\bibitem{thammapalo2008environmental}
+S.~Thammapalo, V.~Chongsuvivatwong, A.~Geater, M.~Dueravee, Environmental
+  factors and incidence of dengue fever and dengue haemorrhagic fever in an
+  urban area, southern thailand, Epidemiology and Infection 136~(01) (2008)
+  135--143.
+
+\bibitem{sarfraz2014near}
+M.~S. Sarfraz, N.~K. Tripathi, A.~Kitamoto, Near real-time characterisation of
+  urban environments: a holistic approach for monitoring dengue fever risk
+  areas, International Journal of Digital Earth 7~(11) (2014) 916--934.
+
+\bibitem{sulaiman1996relationship}
+S.~Sulaiman, Z.~A. Pawanchee, Z.~Arifin, A.~Wahab, Relationship between breteau
+  and house indices and cases of dengue/dengue hemorrhagic fever in kuala
+  lumpur, malaysia, JOURNAL-AMERICAN MOSQUITO CONTROL ASSOCIATION 12 (1996)
+  494--496.
+
+\bibitem{nakhapakorn2005information}
+K.~Nakhapakorn, N.~K. Tripathi, An information value based analysis of physical
+  and climatic factors affecting dengue fever and dengue haemorrhagic fever
+  incidence, International Journal of Health Geographics 4~(1) (2005) 13.
+
+\bibitem{chang2009combining}
+A.~Y. Chang, M.~E. Parrales, J.~Jimenez, M.~E. Sobieszczyk, S.~M. Hammer, D.~J.
+  Copenhaver, R.~P. Kulkarni, Combining google earth and gis mapping
+  technologies in a dengue surveillance system for developing countries,
+  International journal of health geographics 8~(1) (2009) 49.
+
+\bibitem{knudsen1992vector}
+A.~B. Knudsen, R.~Slooff, Vector-borne disease problems in rapid urbanization:
+  new approaches to vector control., Bulletin of the World Health Organization
+  70~(1) (1992) 1.
+
+\bibitem{troyo2009urban}
+A.~Troyo, D.~O. Fuller, O.~Calder{\'o}n-Arguedas, M.~E. Solano, J.~C. Beier,
+  Urban structure and dengue incidence in puntarenas, costa rica, Singapore
+  journal of tropical geography 30~(2) (2009) 265--282.
+
+\bibitem{li1985rainfall}
+C.~Li, T.~Lim, L.~Han, R.~Fang, Rainfall, abundance of aedes aegypti and dengue
+  infection in selangor, malaysia., The Southeast Asian journal of tropical
+  medicine and public health 16~(4) (1985) 560--568.
+
+\bibitem{hales2002potential}
+S.~Hales, N.~De~Wet, J.~Maindonald, A.~Woodward, Potential effect of population
+  and climate changes on global distribution of dengue fever: an empirical
+  model, The Lancet 360~(9336) (2002) 830--834.
+
+\bibitem{rueda1990temperature}
+L.~Rueda, K.~Patel, R.~Axtell, R.~Stinner, et~al., Temperature-dependent
+  development and survival rates of culex quinquefasciatus and aedes
+  aegypti(diptera: Culicidae)., Journal of medical entomology 27~(5) (1990)
+  892--898.
+
+\bibitem{tun2000effects}
+W.~Tun-Lin, T.~Burkot, B.~Kay, Effects of temperature and larval diet on
+  development rates and survival of the dengue vector aedes aegypti in north
+  queensland, australia, Medical and veterinary entomology 14~(1) (2000)
+  31--37.
+
+\bibitem{brady2013modelling}
+O.~J. Brady, M.~A. Johansson, C.~A. Guerra, S.~Bhatt, N.~Golding, D.~M. Pigott,
+  H.~Delatte, M.~G. Grech, P.~T. Leisnham, R.~Maciel-de Freitas, et~al.,
+  Modelling adult aedes aegypti and aedes albopictus survival at different
+  temperatures in laboratory and field settings, Parasit Vectors 6~(1) (2013)
+  351--362.
+
+\bibitem{lambrechts2011impact}
+L.~Lambrechts, K.~P. Paaijmans, T.~Fansiri, L.~B. Carrington, L.~D. Kramer,
+  M.~B. Thomas, T.~W. Scott, Impact of daily temperature fluctuations on dengue
+  virus transmission by aedes aegypti, Proceedings of the National Academy of
+  Sciences 108~(18) (2011) 7460--7465.
+
+\bibitem{WPR2015}
+{World Population Review}, Bangkok population 2015.,
+  \url{http://worldpopulationreview.com/world-cities/bangkok-population/},
+  accessed 2016-01-18 (2015).
+
+\bibitem{wwo2012}
+{World Weather Online}, Bangkok average temperature and rain from year 2000 to
+  2012.,
+  \url{http://worldpopulationreview.com/world-cities/bangkok-population/},
+  accessed 2016-01-18 (2012).
+
+\bibitem{limkittikul2014epidemiological}
+K.~Limkittikul, J.~Brett, M.~L'Azou, Epidemiological trends of dengue disease
+  in thailand (2000--2011): a systematic literature review.
+
+\bibitem{whitehorn2010dengue}
+J.~Whitehorn, J.~Farrar, Dengue, British medical bulletin 95~(1) (2010)
+  161--173.
+
+\bibitem{reiter2010yellow}
+P.~Reiter, et~al., Yellow fever and dengue: a threat to europe, Euro Surveill
+  15~(10) (2010) 19509.
+
+\bibitem{stoddard2014long}
+S.~T. Stoddard, H.~J. Wearing, R.~C. Reiner~Jr, A.~C. Morrison, H.~Astete,
+  S.~Vilcarromero, C.~Alvarez, C.~Ramal-Asayag, M.~Sihuincha, C.~Rocha, et~al.,
+  Long-term and seasonal dynamics of dengue in iquitos, peru, PLoS Negl Trop
+  Dis 8~(7) (2014) e3003.
+
+\bibitem{carrington2013reduction}
+L.~B. Carrington, S.~N. Seifert, M.~V. Armijos, L.~Lambrechts, T.~W. Scott,
+  Reduction of aedes aegypti vector competence for dengue virus under large
+  temperature fluctuations, The American journal of tropical medicine and
+  hygiene 88~(4) (2013) 689--697.
+
+\bibitem{adams2006cross}
+B.~Adams, E.~Holmes, C.~Zhang, M.~Mammen, S.~Nimmannitya, S.~Kalayanarooj,
+  M.~Boots, Cross-protective immunity can account for the alternating epidemic
+  pattern of dengue virus serotypes circulating in bangkok, Proceedings of the
+  National Academy of Sciences 103~(38) (2006) 14234--14239.
+
+\bibitem{alto2008larval}
+B.~W. Alto, L.~P. Lounibos, C.~N. Mores, M.~H. Reiskind, Larval competition
+  alters susceptibility of adult aedes mosquitoes to dengue infection,
+  Proceedings of the Royal Society of London B: Biological Sciences 275~(1633)
+  (2008) 463--471.
+
+\bibitem{halstead2008dengue}
+S.~B. Halstead, Dengue virus-mosquito interactions, Annu. Rev. Entomol. 53
+  (2008) 273--291.
+
+\bibitem{esteva2000influence}
+L.~Esteva, C.~Vargas, Influence of vertical and mechanical transmission on the
+  dynamics of dengue disease, Mathematical biosciences 167~(1) (2000) 51--64.
+
+\bibitem{favier2005influence}
+C.~Favier, D.~Schmit, C.~D. M{\"u}ller-Graf, B.~Cazelles, N.~Degallier,
+  B.~Mondet, M.~A. Dubois, Influence of spatial heterogeneity on an emerging
+  infectious disease: the case of dengue epidemics, Proceedings of the Royal
+  Society of London B: Biological Sciences 272~(1568) (2005) 1171--1177.
+
+\bibitem{arunachalam2010eco}
+N.~Arunachalam, S.~Tana, F.~Espino, P.~Kittayapong, W.~Abeyewickrem, K.~T. Wai,
+  B.~K. Tyagi, A.~Kroeger, J.~Sommerfeld, M.~Petzold, Eco-bio-social
+  determinants of dengue vector breeding: a multicountry study in urban and
+  periurban asia, Bulletin of the World Health Organization 88~(3) (2010)
+  173--184.
+
+\bibitem{syarifah2008ovitrap}
+N.~Syarifah, T.~Rusmatini, T.~Djatie, F.~Huda, Ovitrap ratio of aedes aegypti
+  larvae collected inside and outside houses in a community survey to prevent
+  dengue outbreak, bandung, indonesia, 2007, Proc Assoc Southeast Asian Nations
+  Congr Trop Med Parasitolol 3 (2008) 116--120.
+
+\bibitem{scott2003aedes}
+T.~W. Scott, A.~C. Morrison, Aedes aegypti density and the risk of
+  dengue-virus, Ecol. Aspects Appl. Genet. Modi. Mosq 2 (2003) 187.
+
+\bibitem{malavige2004dengue}
+G.~Malavige, S.~Fernando, D.~Fernando, S.~Seneviratne, Dengue viral infections,
+  Postgraduate medical journal 80~(948) (2004) 588--601.
+
+\bibitem{chareonviriyaphap2003larval}
+T.~Chareonviriyaphap, P.~Akratanakul, S.~Nettanomsak, S.~Huntamai, Larval
+  habitats and distribution patterns of aedes aegypti (linnaeus) and aedes
+  albopictus (skuse), in thailand.
+
+\bibitem{raju2008application}
+K.~Raju, B.~Sokhi, Application of gis modeling for dengue fever prone area
+  based on socio-cultural and environmental factors--a case study of delhi city
+  zone, Int Arch Photogramm Remote Sens Spat Inf Sci 37 (2008) 165--170.
+
+\bibitem{wichmann2011dengue}
+O.~Wichmann, I.-K. Yoon, S.~Vong, K.~Limkittikul, R.~V. Gibbons, M.~P. Mammen,
+  S.~Ly, P.~Buchy, C.~Sirivichayakul, R.~Buathong, et~al., Dengue in thailand
+  and cambodia: an assessment of the degree of underrecognized disease burden
+  based on reported cases, PLoS Negl Trop Dis 5~(3) (2011) e996.
+
+\end{thebibliography}

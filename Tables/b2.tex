@@ -1,0 +1,51 @@
+
+	\begin{tikzpicture}[
+	node distance=1cm and 0cm,
+	mynode/.style={draw,  rectangle, text width=2cm,align=center}
+	]
+	
+	\node[mynode] (pd) {Population Density};	
+	\node[mynode,below =of pd]  (grb){Neglected Garbage};
+	\node[mynode,left = 0.2 cm of grb]  (ca){Cleaning Activity};
+	\node[mynode,below =of grb]  (ob){Outside House Breeding};
+	\node[mynode,below =of ca]  (ib){Inside House Breeding};
+	\node[mynode,below  = of ob]  (md){Mosquito Density};
+	
+	\node[mynode, right = 1.5 cm of pd]  (season){Season};
+	\node[mynode, below left = of season, right = 0.2 cm of grb]  (rain){Rain};
+	\node[mynode, below right = of season, right = 0.2 cm of rain]  (DTR){DTR};
+	
+	
+	
+	\node[mynode, right = 0.4 cm of season]  (mndr){Surrounding Dengue Rate};
+	\node[mynode, right = 0.2 cm of mndr]  (dr){Dengue Rate};
+	\node[mynode, right = 0.3 cm of dr]  (pdr){Population Demographics};
+	
+	\node[mynode,right = 3.5 cm of md]  (dim){Density of Infected Mosquitoes};
+	\node[mynode,right = 3.5 cm of dim]  (idp){Immune Dengue People};
+	
+	\node[mynode,below left = 1cm of idp, fill=blue!20]  (dh){Reported Dengue Cases};
+	
+	
+	
+	\path (season) edge[-latex, ] node[left=1pt] {\cite{WPR2015}}   (rain)
+	(season) edge[-latex] (DTR)    
+	(rain) edge[-latex]  node[left=1pt] {\cite{nakhapakorn2005information}} (ob)
+	(DTR) edge[-latex] node[left=1pt] {\cite{lambrechts2011impact}}   (md)  
+	(dr) edge[-latex] (idp)
+	(pdr) edge[-latex] (idp)
+	(dr) edge[-latex] (dim)
+	(mndr) edge[-latex] (dim)
+	
+	
+	(pd) edge[-latex]  node[left=1pt] {\cite{chang2009combining,knudsen1992vector,troyo2009urban}}   (grb)
+	(grb) edge[-latex] node[left=1pt] {\cite{chang2009combining,knudsen1992vector,troyo2009urban}}   (ob)
+	(ob) edge[-latex] (md) 
+	(ib) edge[-latex] (md) 
+	(md) edge[-latex] (dim)
+	(dim) edge[-latex] (dh)
+	(idp) edge[-latex] node[left=1pt]{\cite{whodenvsym2015, whitehorn2010dengue,reiter2010yellow}} (dh)
+	(ca) edge[-latex] (ib)
+	(pdr) edge[-latex]  node[left=1pt]{\cite{whodenvsym2015,cummings2009impact,wilder2012denguetools}} (dh) (dim);  
+	
+	\end{tikzpicture}

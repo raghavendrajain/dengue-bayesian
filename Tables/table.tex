@@ -1,0 +1,398 @@
+
+\documentclass[a4paper,9pt,nil]{article}
+\usepackage{geometry}
+\geometry{legalpaper, portrait, margin={1in,0.5in}}
+
+% Additional Options
+\begin{document}
+
+	\begin{table}[!htbp]
+		\centering
+		\normalsize
+		\begin{tabular}{|l|p{2cm}|l|l|}
+			\hline
+			Name & Abbreviation & Predict possibilities output & Parents (Pa)\\
+			\hline
+			Mosquito density & MD &  $MD_0$: Low &  Outside house breeding container\\
+			&  &  $MD_1$: Moderate &  Inside house breeding container\\
+			&  &  $MD_2$: High &  Diurnal temperature range\\
+			\hline
+			Outside house breeding container & OB &  $OB_0$:Low &  Neglect garbage\\
+			&  &  $OB_1$:High &  Rain\\
+			\hline
+			Inside house breeding container & IB &  $IB_0$:Low &  Cleaning activity\\
+			&  &  $IB_1$:High &  House type \\
+			\hline
+			Neglect garbage & NG &  $NG_0$:Low &  Cleaning activity\\
+			&  &  $NG_1$:High &  Population density\\
+			\hline
+			Cleaning activity & CA &  $CA_0$:Low &  Awareness \\
+			&  &  $CA_1$:High & \\
+			\hline
+			Rain & R &  $R_1$:Low &  Season \\
+			&  &  $R_1$:Moderate & \\
+			&  &  $R_2$:High & \\
+			\hline
+			Diurnal temperature range & DTR &  $DTR_0$:Low &  Season \\
+			&  &  $DTR_1$:High & \\
+			\hline
+			House Density & HT &  $HT_0$:Low & \\
+			&  &  $HT_1$:High & \\
+			\hline
+			Awareness & A &  $A_0$:Low & \\
+			&  &  $A_1$:High & \\
+			\hline
+			Season & S &  $S_0$:Summer & \\
+			&  &  $S_1$:Winter & \\
+			&  &  $S_2$:Rain & \\
+			\hline
+			Population density & PD & $PD_0$:Low & \\
+			&  &  $PD_1$:High & \\
+			\hline
+		\end{tabular}
+		\caption{Value of each variables in Mosquito density Bayesian network model}
+	\end{table}
+
+	
+	
+	\begin{table}[!htbp]
+		\centering
+		\normalsize
+		\begin{tabular}{|l|l|l|l|l|l|}
+			\hline
+			\multicolumn{3}{|l|}{Pattern}	 & P( $MD_0$ $\mid$ PA) & P($MD_1$ $\mid$ PA) & P($MD_2$  $\mid$ PA)\\
+			\hline
+			$OB_0$ & $IB_0$ & $DTR_0$ & 1 & 0 & 0\\
+			\hline
+			$OB_0$ & $IB_0$ & $DTR_1$ & 1 & 0 & 0\\
+			\hline
+			$OB_0$ & $IB_1$ & $DTR_0$ & 0 & 0.7 & 0.3\\
+			\hline
+			$OB_0$ & $IB_1$ & $DTR_1$ & 0.2 & 0.6 & 0.2\\
+			\hline
+			$OB_1$ & $IB_0$ & $DTR_0$ & 0 & 0.3 & 0.7\\
+			\hline
+			$OB_1$ & $IB_1$ & $DTR_0$ & 0 & 0 & 1\\
+			\hline
+			$OB_1$ & $IB_0$ & $DTR_1$ & 0 & 0.5 & 0.5\\
+			\hline
+			$OB_1$ & $IB_1$ & $DTR_1$ & 0 & 0 & 1\\
+			\hline
+		\end{tabular}
+		\caption{ Conditional probability distribution of mosquito density}
+	\end{table}
+	
+	
+	\begin{table}[!htbp]
+		\centering
+		\normalsize
+		\begin{tabular}{|l|l|l|l|}
+			\hline
+			\multicolumn{2}{|l|}{Pattern}  & P(OB0 $\mid$ PA) & P(OB1 $\mid$ PA)\\
+			\hline
+			$NB_0$ & $R_0$ & 1 & 0\\
+			\hline
+			$NB_0$ & $R_1$ & 0.4 & 0.6\\
+			\hline
+			$NB_0$ & $R_2$ & 0.2 & 0.7\\
+			\hline
+			$NB_1$ & $R_0$ & 0.9 & 0.1\\
+			\hline
+			$NB_1$ & $R_1$ & 0.2 & 0.8\\
+			\hline
+			$NB_1$ & $R_2$ & 0 & 1\\
+			\hline
+		\end{tabular}
+		\caption{Conditional probability distribution of density of outside house breeding spot}
+	\end{table}
+	
+	\begin{table}[!htbp]
+		\centering
+		\normalsize
+		\begin{tabular}{|l|l|l|l|}
+			\hline
+		\multicolumn{2}{|l|}{Pattern}  & P(IB0 $\mid$ PA) & P(IB1$\mid$ PA)\\
+			\hline
+			CA0 & HT0 & 0.6 & 0.4\\
+			\hline
+			CA0 & HT1 & 0 & 1\\
+			\hline
+			CA1 & HT0 & 1 & 0\\
+			\hline
+			CA1 & HT1 & 0.4 & 0.6\\
+			\hline
+		\end{tabular}
+			\caption{Conditional probability distribution of density of inside house breeding container}
+	\end{table}
+	
+	\begin{table}[!htbp]
+		\centering
+		\normalsize
+		\begin{tabular}{|l|l|l|l|}
+			\hline
+				\multicolumn{2}{|l|}{Pattern}  & P(NG0 $\mid$ PA) & P(NG1 $\mid$ PA)\\
+			\hline
+				CA0 & PD0 & 0.4 & 0.6\\
+			\hline
+				CA0 & PD1 & 0 & 1\\
+			\hline
+				CA1 & PD0 & 0.9 & 0.1\\
+			\hline
+				CA1 & PD1 & 0.6 & 0.4\\
+			\hline
+		\end{tabular}
+		\caption{Conditional probability distribution of neglect garbage}
+	\end{table}
+	
+	\begin{table}[!htbp]
+		\centering
+		\normalsize
+		\begin{tabular}{|l|l|l|}
+			\hline
+				Pattern & P(CA0 $\mid$ PA) & P(CA1 $\mid$ PA)\\
+			\hline
+				A0 & 1 & 0\\
+			\hline
+				A1 & 0 & 1\\
+			\hline
+		\end{tabular}
+		\caption{Conditional probability distribution of cleaning activity}
+	\end{table}
+	
+	
+	\begin{table}[!htbp]
+		\centering
+		\normalsize
+		\begin{tabular}{|l|l|l|l|}
+			\hline
+				Pattern & P(R0 $\mid$ PA) & P(R1 $\mid$ PA) & P(R2 $\mid$ PA)\\
+			\hline
+				S0 & 1 & 0 & 0\\
+			\hline
+				S1 & 0.4 & 0.6 & 0\\
+			\hline
+				S2 & 0 & 0.2 & 0.8\\
+			\hline
+		\end{tabular}
+		\caption{Conditional probability distribution of rain}
+	\end{table}
+	
+	\begin{table}[!htbp]
+		\centering
+		\normalsize
+		\begin{tabular}{|l|l|l|}
+			\hline
+				Pattern & P(DTR0 $\mid$  PA) & P(DTR1 $\mid$  PA)\\
+			\hline
+				S0 & 0 & 1\\
+			\hline
+				S1 & 1 & 0\\
+			\hline
+				S2 & 0.9 & 0.1\\
+			\hline
+		\end{tabular}
+		\caption{Conditional probability distribution of Diurnal temperature range}
+	\end{table}
+	
+	\begin{table}[!htbp]
+		\centering
+		\normalsize
+		\begin{tabular}{|l|l|l|l|}
+				\hline
+				Name & Abbreviation & Predict possibilities output & Parents (Pa)\\
+				\hline
+				Actual report & ARDC & ARDC0:Under report &  Hospital Awareness \\
+				DF/DHF Cases &  & ARDC1:Moderate report &  Dengue rate\\
+				 &  & ARDC2:Active report & \\
+				 \hline
+				Dengue rate & DR & DR0:Low &  Infected Mosquitos \\
+				 &  & DR1:Moderate &  Immune Dengue People\\
+				 &  & DR2:High & \\
+				 \hline
+				Density of infected Mosquitos & IM & IM0:Low  &  Dengue Cases \\
+				 &  & IM0:Moderate &  Dengue Case of nearby district\\
+				 &  & IM1:High &  Diurnal temperature range\\
+				 &  &  &  Mosquito density\\
+				 \hline
+				Immune Dengue People & IP & IP0:Low &  Dengue Cases \\
+				 &  & IP1:Moderate & \\
+				 &  & IP2:High & \\
+				 \hline
+				Diurnal temperature range & DTR & DTR0:Low &  Season \\
+				 &  & DTR1:High & \\
+				 \hline
+				Dengue Cases & DC & DC0:Low & \\
+				 &  & DC1: Moderate & \\
+				 &  & DC2:High & \\
+				 \hline
+				Dengue Case of nearby district & DCN & DCN0:Low & \\
+				 &  & DCN1: Moderate & \\
+				 &  & DCN2:High & \\
+				 \hline
+				Mosquito density & MD & MD0: Low & \\
+				 &  & MD1: Moderate & \\
+				 &  & MD2: High & \\
+				 \hline
+				Hospital Awareness & HA & HA0: Low & \\
+				 &  & HA1: High & \\
+				 \hline
+				Population Density & PD & PD0: Low & \\
+				 &  & PD1: High & \\
+				 \hline
+				 Season & S & ·      S0:Summer & \\
+					 &  & ·      S1:Winter & \\
+					 &  & ·      S2:Rain & \\
+				\hline 
+				 Awareness & A & ·      A0:Low & \\			
+					 &  & ·      A1:High & \\
+				\hline
+					
+			\end{tabular}
+	\end{table}
+	
+	\begin{table}[!htbp]
+		\centering
+		\normalsize
+		\begin{tabular}{|l|l|l|l|l|}
+			\hline
+				\multicolumn{2}{|l|}{Pattern}  & P(ARDC 0 $\mid$ PA) & P(ARDC 1 $\mid$ PA) & P(ARDC2 $\mid$ PA)\\
+			\hline
+				HA0 & DR0 & 1 & 0 & 0\\
+			\hline
+				HA0 & DR1 & 0.7 & 0.2 & 0.1\\
+			\hline
+				HA0 & DR2 & 0.3 & 0.5 & 0.2\\
+			\hline
+				HA1 & DR0 & 0.7 & 0.3 & 0\\
+			\hline
+				HA1 & DR1 & 0.3 & 0.5 & 0.2\\
+			\hline
+				HA1 & DR2 & 0 & 0.2 & 0.8\\
+			\hline
+		\end{tabular}
+		\caption{Conditional probability distribution of Actual report DF/DHF Cases}
+	\end{table}
+	
+	\begin{table}[!htbp]
+		\centering
+		\normalsize
+		\begin{tabular}{|l|l|l|l|l|}
+			\hline
+				\multicolumn{2}{|l|}{Pattern}   & P(DR0 $\mid$  PA) & P(DR 1 $\mid$  PA) & P(DR 2 $\mid$  PA)\\
+			\hline
+				IM0 & IP x & 1 & 0 & 0\\
+			\hline
+				IM1 & IP 0 & 0 & 0.3 & 0.7\\
+			\hline
+				IM1 & IP 1 & 0.1 & 0.4 & 0.5\\
+			\hline
+				IM1 & IP 2 & 0.1 & 0.5 & 0.4\\
+			\hline
+				IM2 & IP 0 & 0 & 0 & 1\\
+			\hline
+				IM2 & IP 1 & 0 & 0.1 & 0.9\\
+			\hline
+				IM2 & IP 2 & 0 & 0.3 & 0.7\\
+			\hline
+		\end{tabular}
+		\caption{Conditional probability distribution of dengue incident rate (DF/DHF cases)}
+	\end{table}
+	
+	\begin{table}[!htbp]
+		\centering
+		\normalsize
+		\begin{tabular}{|l|l|l|l|}
+			\hline
+				Pattern & P(IP0 $\mid$ PA) & P(IP1 $\mid$ PA) & P(IP2 $\mid$ PA)\\
+			\hline
+				DC0 & 1 & 0 & 0\\
+			\hline
+				DC1 & 0 & 1 & 0\\
+			\hline
+				DC2 & 0 & 0 & 1\\
+			\hline
+		\end{tabular}
+		\caption{Conditional probability distribution of immune dengue people}
+	\end{table}
+	
+	\begin{table}[!htbp]
+		\centering
+		\normalsize
+		\begin{tabular}{|l|l|l|l|l|l|l|}
+			\hline
+				\multicolumn{4}{|l|}{Pattern}    & P(IM0 $\mid$ PA) & P(IM1 $\mid$ PA) & P(IM2 $\mid$ PA)\\
+			\hline
+				DC0 & DCN 0 & MD0 & DTRx & 1 & 0 & 0\\
+			\hline
+				DC0 & DCN 0 & MD1 & DTRx & 0.9 & 0.1 & 0\\
+			\hline
+				DC0 & DCN 0 & MD2 & DTR0 & 0.7 & 0.3 & 0\\
+			\hline
+				DC0 & DCN 0 & MD2 & DTR1 & 0.8 & 0.2 & 0\\
+			\hline
+				DC0 & DCN 1 & MD0 & DTRx & 1 & 0 & 0\\
+			\hline
+				DC0 & DCN 1 & MD1 & DTR0 & 0.7 & 0.3 & 0\\
+			\hline
+				DC0 & DCN 1 & MD1 & DTR1 & 0.8 & 0.2 & 0\\
+			\hline
+				DC0 & DCN 1 & MD2 & DTR0 & 0.3 & 0.7 & 0\\
+			\hline
+				DC0 & DCN 1 & MD2 & DTR1 & 0.4 & 0.6 & 0\\
+			\hline
+				DC0 & DCN 2 & MD0 & DTRx & 0.9 & 0.1 & 0\\
+			\hline
+				DC0 & DCN 2 & MD1 & DTR0 & 0.2 & 0.8 & 0\\
+			\hline
+				DC0 & DCN 2 & MD1 & DTR1 & 0.3 & 0.7 & 0\\
+			\hline
+				DC0 & DCN 2 & MD2 & DTR0 & 0 & 0.8 & 0.2\\
+			\hline
+				DC0 & DCN 2 & MD1 & DTR1 & 0.6 & 0.9 & 0.1\\
+			\hline
+				DC1 & DCN 0 & MD0 & DTR0 & 0.8 & 0.2 & 0\\
+			\hline
+				DC1 & DCN 0 & MD0 & DTR1 & 0.9 & 0.1 & 0\\
+			\hline
+				DC1 & DCN 0 & MD1 & DTR0 & 0 & 0.9 & 0.1\\
+			\hline
+				DC1 & DCN 0 & MD1 & DTR1 & 0.1 & 0.9 & 0\\
+			\hline
+				DC1 & DCN 0 & MD2 & DTR0 & 0 & 0.3 & 0.7\\
+			\hline
+				DC1 & DCN 0 & MD2 & DTR1 & 0 & 0.4 & 0.6\\
+			\hline
+				DC1 & DCN 1 & MD0 & DTRx & 0.7 & 0.3 & 0\\
+			\hline
+				DC1 & DCN 1 & MD1 & DTR0 & 0 & 0.6 & 0.4\\
+			\hline
+				DC1 & DCN 1 & MD1 & DTR1 & 0.2 & 0.5 & 0.3\\
+			\hline
+				DC1 & DCN 1 & MD2 & DTR0 & 0 & 0.2 & 0.8\\
+			\hline
+				DC1 & DCN 1 & MD2 & DTR1 & 0 & 0.3 & 0.7\\
+			\hline
+				DC1 & DCN 2 & MD0 & DTRx & 0.2 & 0.8 & 0\\
+			\hline
+				DC1 & DCN 2 & MD1 & DTR0 & 0 & 0.4 & 0.6\\
+			\hline
+				DC1 & DCN 2 & MD1 & DTR1 & 0 & 0.6 & 0.4\\
+			\hline
+				DC1 & DCN 2 & MD2 & DTRx & 0 & 0 & 1\\
+			\hline
+				DC2 & DCN 0 & MD0 & DTR0 & 0.7 & 0.2 & 0.1\\
+			\hline
+				DC2 & DCN 0 & MD0 & DTR1 & 0.8 & 0.2 & 0\\
+			\hline
+				DC2 & DCN 0 & MD1 & DTR0 & 0 & 0.3 & 0.7\\
+			\hline
+				DC2 & DCN 0 & MD1 & DTR1 & 0 & 0.4 & 0.6\\
+			\hline
+				DC2 & DCN x & MD2 & DTRx & 0 & 0 & 1\\
+			\hline
+		\end{tabular}
+		\caption{Conditional probability distribution of density of infected mosquitoes}
+	\end{table}
+	
+	
+\end{document}

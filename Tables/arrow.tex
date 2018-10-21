@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+
+
+\begin{document}
+\begin{tikzpicture}
+
+\coordinate (origin) at (0,0);
+\coordinate (down) at (0,-5);
+\coordinate (left) at (-3,0);
+\coordinate (right) at (7,0);
+\coordinate (leftDiagonal) at (-6,-6);
+\coordinate (rightDiagonal) at (4,-5);
+
+\draw [fill=blue] (origin) circle (2pt) node [above] {Origin};
+
+\draw [fill=blue] (down) circle (2pt) node [left] {\Large $o_{d_1}$};
+\draw [fill=blue] (left) circle (2pt) node [left] {\Large $o_{d_2}$};
+\draw [fill=blue] (right) circle (2pt) node [left] {\Large $o_{d_3}$};
+\draw [fill=blue] (leftDiagonal) circle (2pt) node [left] {\Large $o_{d_4}$};
+\draw [fill=blue] (rightDiagonal) circle (2pt) node [left] {\Large $o_{d_5}$};
+
+\draw [-latex, red, thick, shorten >= 3.00cm] (origin) -- (down);
+\tkzLabelSegment[above right=5pt](origin, down){\textit{$\vec{V}_1$}}
+
+\draw [-latex, red, thick, shorten >= 1.00cm] (origin) -- (left);
+\tkzLabelSegment[above=5pt](origin, left){\textit{$\vec{V}_2$}}
+
+\draw [-latex, red, thick, shorten >= 4.00cm] (origin) -- (leftDiagonal);
+\tkzLabelSegment[above left=5pt](origin, leftDiagonal){\textit{$\vec{V}_3$}}
+
+\draw [-latex, red, thick, shorten >= 3.00cm] (origin) -- (right);
+\tkzLabelSegment[above=5pt](origin, right){\textit{$\vec{V}_4$}}
+
+\draw [-latex, red, thick, shorten >= 3.00cm] (origin) -- (rightDiagonal);
+\tkzLabelSegment[above right=5pt](origin, rightDiagonal){\textit{$\vec{V}_5$}}
+
+
+
+
+\end{tikzpicture}
+\end{document}
+
+
